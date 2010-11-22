@@ -1,0 +1,4 @@
+./sift <pgm/horse1.pgm >key/horse1.key
+./sift <pgm/horse2.pgm >key/horse2.key
+
+./match.exe -im1 pgm/horse1.pgm -k1 key/horse1.key -im2 pgm/horse2.pgm -k2 key/horse2.key >out2.pgm

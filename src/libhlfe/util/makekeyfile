@@ -1,0 +1,17 @@
+#! /bin/bash
+
+echo "Making $1.key"
+rm -f jpg/XXX.jpg pgm/XXX.pgm key/XXX.pgm
+
+mv jpg/$1.jpg jpg/XXX.jpg 2> /dev/null
+mv pgm/$1.pgm pgm/XXX.pgm 2> /dev/null
+mv key/$1.key key/XXX.key 2> /dev/null
+
+make XXX
+
+mv jpg/XXX.jpg jpg/$1.jpg 2> /dev/null
+mv pgm/XXX.pgm pgm/$1.pgm 2> /dev/null
+mv key/XXX.key key/$1.key 2> /dev/null
+
+
+

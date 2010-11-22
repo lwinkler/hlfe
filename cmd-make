@@ -1,0 +1,6 @@
+cd src/libhlfe
+make
+cd ../gui
+make
+cp hlfe ../..
+

@@ -1,0 +1,3 @@
+#! /bin/bash
+
+cp hlfe bin ; cd bin ; ./hlfe ; cd ..
